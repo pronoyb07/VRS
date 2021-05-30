@@ -11,8 +11,8 @@
 body {
     font-family: 'Montserrat',
         sans-serif;
-        margin: 0px;
-        background: #0A122A;
+    margin: 0px;
+    background: #0A122A;
 }
 
 hr {
@@ -42,9 +42,10 @@ If ou give only top & right, top one will be applied to bottom and right one wil
 .link {
     text-decoration: none;
     padding: 0.5rem, 1rem;
-    
+
 
 }
+
 /* .twitter:hover {
     background-color: #00B6F1;
 }
@@ -64,7 +65,6 @@ If ou give only top & right, top one will be applied to bottom and right one wil
     border-radius: 0.5rem;
     /**Put space between "0" and ".5" ie. "0 .5 and see what happens"**/
     color: white
-    
 }
 
 .link-secondary {
@@ -73,7 +73,6 @@ If ou give only top & right, top one will be applied to bottom and right one wil
     color: var(--primary-color);
     border-radius: 0.5rem;
     border: 2px solid var(--primary-color)
-    
 }
 
 /** look into BEM naming convention for CSS **/
@@ -92,7 +91,7 @@ If ou give only top & right, top one will be applied to bottom and right one wil
 /** Navigation **/
 
 .navigation {
-    background-color:#0A122A;
+    background-color: #0A122A;
     color: white;
     padding: 1rem;
     /* border-bottom-left-radius: 1rem;
@@ -181,7 +180,7 @@ If ou give only top & right, top one will be applied to bottom and right one wil
 
 .footer .footer-header {
     font-size: large;
-    color: black;
+    color: white;
 }
 
 .footer ul {
@@ -191,43 +190,33 @@ If ou give only top & right, top one will be applied to bottom and right one wil
 * {
     margin: 0;
     padding: 0;
-  }
-  
-  
+}
 
-
-
-
-
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
+body {
     background: #0A122A;
-  }
-  
-  /* Let's style the wrapper in such away that, 
+}
+
+/* Let's style the wrapper in such away that, 
   it should always be at the center of the browser */
-  .wrapper {
+.wrapper {
     position: absolute;
-    top: 140%;
-    left: 55%;
+    top: 120%;
+    left: 61.5%;
     transform: translate(-50%, -50%);
     width: 550px;
-  }
-  
-  /* Style the Un-order list by setting its list-style to none */
-  .wrapper ul {
+    font-size: 12px;
+}
+
+/* Style the Un-order list by setting its list-style to none */
+.wrapper ul {
     list-style: none;
-  }
-  
-  /* Style the list items inside the UL list, by setting its width, height and line-height 
+}
+
+/* Style the list items inside the UL list, by setting its width, height and line-height 
     and float them to left and set its border and border-radius.
    */
-  .wrapper ul li {
-    width: 75px;
+.wrapper ul li {
+    width: 30px;
     height: 75px;
     line-height: 75px;
     margin: 0 10px;
@@ -237,94 +226,91 @@ If ou give only top & right, top one will be applied to bottom and right one wil
     border: 0px solid #D8E2DC;
     float: left;
     transition: all 0.5s ease;
-  }
-  
-  /* Style the icons by setting its color and margin-top value to 20px 
+}
+
+/* Style the icons by setting its color and margin-top value to 20px 
   to align it properly */
-  .wrapper ul li .fa {
-    color: white;
+.wrapper ul li .fa {
+    color: #D8E2DC;
     margin-top: 20px;
     transition: all 0.5s ease;
-  }
-  
-  /* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
+}
+
+/* Now target the specific li classes for styling and use box-shadow effect to border a0d text-shadow effect
     to icons for glowing effect and use transition property for smooth transition effect. */
-  /*facebook*/
-  /* .wrapper ul li:hover.facebook {
-    border: 0px solid #3b5998;
-    box-shadow: 0 0 15px #3b5998;
-    transition: all 0.5s ease;
-  } */
-  
-  .wrapper ul li:hover .fa-facebook {
-    color: #3b5998;
-    text-shadow: 0 0 15px #3b5998;
-    transition: all 0.5s ease;
-  }
-  
-  /*twitter*/
-  /* .wrapper ul li:hover.twitter {
-    border: 0px solid #00aced;
-    box-shadow: 0 0 15px #00aced;
-    transition: all 0.5s ease;
-  } */
-  
-  .wrapper ul li:hover .fa-twitter {
+
+/* Twitter */
+.wrapper ul li:hover .fa-twitter {
     color: #00aced;
     text-shadow: 0 0 15px #00aced;
     transition: all 0.5s ease;
-  }
-  
-  /* instagram */
-  /* .wrapper ul li:hover.instagram {
-    border: 0px solid #bc2a8d;
-    box-shadow: 0 0 15px #bc2a8d;
-    transition: all 0.5s ease;
-  } */
-  
-  .wrapper ul li:hover .fa-instagram {
+}
+
+/* Instagram */
+.wrapper ul li:hover .fa-instagram {
     color: #bc2a8d;
     text-shadow: 0 0 15px #bc2a8d;
     transition: all 0.5s ease;
-  }
-    
-  /* whatsapp */
-  /* .wrapper ul li:hover.whatsapp {
-    border: 0px solid #4dc247;
-    box-shadow: 0 0 15px #4dc247;
-    transition: all 0.5s ease;
-  } */
-  
-  .wrapper ul li:hover .fa-whatsapp {
+}
+
+/* WhatsApp */
+
+.wrapper ul li:hover .fa-whatsapp {
     color: #4dc247;
     text-shadow: 0 0 15px #4dc247;
     transition: all 0.5s ease;
-  }
-  
-  
-  /* media queries */
-  
-  /* @media screen and (max-width: 640px){
+}
+
+/* media queries */
+
+@media screen and (max-width: 640px) {
     .wrapper {
         width: 350px;
     }
-    .wrapper ul li{
+
+    .wrapper ul li {
         margin-top: 10px;
     }
-    .wrapper ul li.google{
+
+    .wrapper ul li.google {
         margin-left: 60px;
     }
-  }
-  
-  
-  @media screen and (max-width: 340px){
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    padding: .5em .3em 0 .3em;
+    margin: .5em;
+    /*color: rgba(255, 255, 255, 0.8);*/
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.fa:hover,
+.fa:active {
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+@media screen and (max-width: 340px) {
     .wrapper {
         width: 150px;
     }
-    .wrapper ul li{
-        margin:15px;
+
+    .wrapper ul li {
+        margin: 15px;
     }
-    .wrapper ul li.google{
+
+    .wrapper ul li.google {
         margin-left: 15px;
     }
-  } */
+}
