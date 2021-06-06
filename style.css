@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 :root {
-    --primary-color: #7C3AED;
+    --primary-color: #E5C2A6;
     --dark-gray: #6b7280;
-    --off-white: #F3F4F6;
+    --off-white: #CDCDCE;
 }
 
 /**Define all your colors in the color pallet then use it whenever you want**/
@@ -12,7 +12,7 @@ body {
     font-family: 'Montserrat',
         sans-serif;
     margin: 0px;
-    background: #0A122A;
+    background: #212426;
 }
 
 hr {
@@ -62,7 +62,7 @@ If ou give only top & right, top one will be applied to bottom and right one wil
     background-color: var(--primary-color);
     border-radius: 0.5rem;
     /**Put space between "0" and ".5" ie. "0 .5 and see what happens"**/
-    color: white
+    color: #CDCDCE
 }
 
 .link-secondary {
@@ -89,8 +89,8 @@ If ou give only top & right, top one will be applied to bottom and right one wil
 /** Navigation **/
 
 .navigation {
-    background-color: #0A122A;
-    color: white;
+    background-color: #212426;
+    color: #CDCDCE;
     padding: 1rem;
     /* border-bottom-left-radius: 1rem;
     border-top-right-radius: 1rem;
@@ -110,7 +110,7 @@ If ou give only top & right, top one will be applied to bottom and right one wil
 }
 
 .navigation .link {
-    color: white;
+    color: #CDCDCE;
 }
 
 /*Inside Navigation there's a link class whose text I wanna change*/
@@ -156,8 +156,8 @@ If ou give only top & right, top one will be applied to bottom and right one wil
 }
 
 .ow {
-    background: #0A122A;
-    color: white;
+    background: #212426;
+    color: #CDCDCE;
     font-weight: normal;
 
 }
@@ -167,137 +167,28 @@ If ou give only top & right, top one will be applied to bottom and right one wil
 .footer {
     padding: 2rem;
     text-align: center;
-    color: white;
+    color: #CDCDCE;
     border-top-right-radius: 1rem;
     font-weight: normal;
 }
 
 .footer .link {
-    color: white;
+    color: #CDCDCE;
 }
 
 .footer .footer-header {
     font-size: large;
-    color: white;
+    color: #CDCDCE;
 }
 
 .footer ul {
     padding-inline-start: 0px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
 
-body {
-    background: #0A122A;
-}
 
-/* Let's style the wrapper in such away that, 
-  it should always be at the center of the browser */
-.wrapper {
-    position: absolute;
-    top: 120%;
-    left: 61.5%;
-    transform: translate(-50%, -50%);
-    width: 550px;
-    font-size: 12px;
-}
 
-/* Style the Un-order list by setting its list-style to none */
-.wrapper ul {
-    list-style: none;
-}
 
-/* Style the list items inside the UL list, by setting its width, height and line-height 
-    and float them to left and set its border and border-radius.
-   */
-.wrapper ul li {
-    width: 30px;
-    height: 75px;
-    line-height: 75px;
-    margin: 0 10px;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 0px solid #D8E2DC;
-    float: left;
-    transition: all 0.5s ease;
-}
-
-/* Style the icons by setting its color and margin-top value to 20px 
-  to align it properly */
-.wrapper ul li .fa {
-    color: #D8E2DC;
-    margin-top: 20px;
-    transition: all 0.5s ease;
-}
-
-/* Now target the specific li classes for styling and use box-shadow effect to border a0d text-shadow effect
-    to icons for glowing effect and use transition property for smooth transition effect. */
-
-/* Twitter */
-.wrapper ul li:hover .fa-twitter {
-    color: #00aced;
-    text-shadow: 0 0 15px #00aced;
-    transition: all 0.5s ease;
-}
-
-/* Instagram */
-.wrapper ul li:hover .fa-instagram {
-    color: #bc2a8d;
-    text-shadow: 0 0 15px #bc2a8d;
-    transition: all 0.5s ease;
-}
-
-/* WhatsApp */
-
-.wrapper ul li:hover .fa-whatsapp {
-    color: #4dc247;
-    text-shadow: 0 0 15px #4dc247;
-    transition: all 0.5s ease;
-}
-
-/* media queries */
-
-@media screen and (max-width: 640px) {
-    .wrapper {
-        width: 350px;
-    }
-
-    .wrapper ul li {
-        margin-top: 10px;
-    }
-
-    .wrapper ul li.google {
-        margin-left: 60px;
-    }
-}
-
-.social-icon {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    padding: .5em .3em 0 .3em;
-    margin: .5em;
-    /*color: rgba(255, 255, 255, 0.8);*/
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-
-.fa:hover,
-.fa:active {
-    -webkit-transform: scale(1.3);
-    -moz-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    -o-transform: scale(1.3);
-    transform: scale(1.3);
-}
 
 @media screen and (max-width: 340px) {
     .wrapper {
