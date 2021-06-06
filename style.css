@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 :root {
-    --primary-color: #E5C2A6;
-    --dark-gray: #6b7280;
+    --primary-color: #61584E;
     --off-white: #CDCDCE;
 }
 
@@ -135,7 +134,7 @@ If ou give only top & right, top one will be applied to bottom and right one wil
 .hero .hero-heading {
     text-align: center;
     padding-top: 1rem;
-    color: var(--dark-gray);
+    color: var(--off-white);
 }
 
 .hero .hero-heading .heading-inverted {
