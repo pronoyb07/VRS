@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 :root {
-    --primary-color: #61584E;
-    --off-white: #CDCDCE;
+    --primary-color: #6c63ff;
+    --off-white: white;
 }
 
 /**Define all your colors in the color pallet then use it whenever you want**/
@@ -11,7 +11,7 @@ body {
     font-family: 'Montserrat',
         sans-serif;
     margin: 0px;
-    background: #212426;
+    background: white;
 }
 
 hr {
@@ -24,55 +24,7 @@ hr {
     margin: 10rem;
 }
 
-/** Padding goes like top->right->bottom->left
-If ou give only top & right, top one will be applied to bottom and right one will be applied to left**/
 
-.container {
-    padding: 0rem 1rem;
-}
-
-.container-center {
-    max-width: 600px;
-    margin: auto;
-}
-
-/* Links */
-
-.link {
-    text-decoration: none;
-    padding: 0.5rem, 1rem;
-
-
-}
-
-/* .twitter:hover {
-    background-color: #00B6F1;
-}
-.ig:hover {
-    background-color:#bc2a8d;
-}
-.fb:hover {
-    background-color: #3B5998;
-} */
-
-.link-primary {
-    padding: 10px 20px;
-    margin: 4px 2px;
-    background-color: var(--primary-color);
-    border-radius: 0.5rem;
-    /**Put space between "0" and ".5" ie. "0 .5 and see what happens"**/
-    color: #CDCDCE
-}
-
-.link-secondary {
-    padding: 10px 20px;
-    margin: 4px 2px;
-    color: var(--primary-color);
-    border-radius: 0.5rem;
-    border: 2px solid var(--primary-color)
-}
-
-/** look into BEM naming convention for CSS **/
 
 /** Lists **/
 
@@ -88,76 +40,66 @@ If ou give only top & right, top one will be applied to bottom and right one wil
 /** Navigation **/
 
 .navigation {
-    background-color: #212426;
+    background-color: white;
     color: #CDCDCE;
     padding: 1rem;
-    /* border-bottom-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    border-top-left-radius: 1rem; */
 
-}
-
-.navigation .nav-brand {
-    font-weight: normal;
-    text-align: center;
-    color: #6b7280;
-}
-
-.navigation .nav-pills {
-    text-align: right;
-}
-
-.navigation .link {
-    color: #CDCDCE;
-}
-
-/*Inside Navigation there's a link class whose text I wanna change*/
-
-.navigation .link-active {
-    font-weight: bold;
 }
 
 /** Header **/
 
 .hero {
-    padding: 2rem;
-    padding-top: 5rem;
+    padding: 0rem;
+    padding-top: 0rem;
 }
 
 .hero .hero-img {
-    max-width: 350px;
+    max-width: 10000px;
     display: block;
     margin: auto;
+    white-space: nowrap;
 }
 
-.hero .hero-heading {
+.hero .text-1 {
     text-align: center;
-    padding-top: 1rem;
-    color: var(--off-white);
+    position: absolute;
+    top: 50%;
+    white-space: nowrap;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    position: relative;
+    animation: text 3s 1;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin bottom: 20px;
 }
 
-.hero .hero-heading .heading-inverted {
-    color: var(--primary-color);
+
+.hero .one {
+    float: left;
+    margin-left: 0px 30px 0px 0px;
+    /* width: 1000px;
+    height: 38px; */
 }
 
-/** For Highlighting Texts **/
+image{
+    display: inline;
 
-/** Section **/
-
-.section {
-    padding: 2rem;
-    font-family: sans-serif;
 }
 
-.section h1 {
-    text-align: center;
+.box{
+    position: relative;
+    top: 50%;
+    padding: 20px;
+    display: flex;
+    
 }
 
-.ow {
-    background: #212426;
-    color: #CDCDCE;
-    font-weight: normal;
+.box .a p{
+    padding: 10px 0 0;
+    text-align: right;
 
 }
 
@@ -201,4 +143,23 @@ If ou give only top & right, top one will be applied to bottom and right one wil
     .wrapper ul li.google {
         margin-left: 15px;
     }
+}
+
+@keyframes text {
+    0% {
+        color: white;
+        /* margin-bottom: -40px; */
+    }
+
+    30% {
+        letter-spacing: 25px;
+        /* margin-bottom: -40px; */
+    }
+
+    /* 85%{
+        letter-spacing: 0px;
+        /* margin-bottom: -40px; */
+}
+
+*/
 }
